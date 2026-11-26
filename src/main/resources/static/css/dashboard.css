@@ -1,0 +1,85 @@
+.dash-main {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+/* ===== Summary cards ===== */
+.dash-card {
+    border: 0;
+    border-left: 5px solid;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(24, 39, 61, 0.06);
+    color: #202938;
+    text-decoration: none;
+    transition: box-shadow 0.15s, transform 0.15s;
+}
+
+.dash-card:has(.stretched-link):hover {
+    box-shadow: 0 8px 20px rgba(24, 39, 61, 0.14);
+    transform: translateY(-2px);
+}
+
+.dash-card .card-body {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+}
+
+.dash-icon {
+    align-items: center;
+    border-radius: 12px;
+    display: flex;
+    flex-shrink: 0;
+    font-size: 24px;
+    height: 52px;
+    justify-content: center;
+    width: 52px;
+}
+
+.dash-card-label {
+    color: #475467;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.dash-card-value {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.card-blue   { background: #eef4ff; border-color: #2459b3 !important; }
+.card-green  { background: #ecfdf3; border-color: #12b76a !important; }
+.card-orange { background: #fff6ed; border-color: #f79009 !important; }
+.card-purple { background: #f4f3ff; border-color: #7a5af8 !important; }
+
+.card-blue .dash-icon   { background: #2459b3; color: #fff; }
+.card-green .dash-icon  { background: #12b76a; color: #fff; }
+.card-orange .dash-icon { background: #f79009; color: #fff; }
+.card-purple .dash-icon { background: #7a5af8; color: #fff; }
+
+/* ===== Chart cards ===== */
+.chart-card {
+    border: 1px solid #e1e5eb;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(24, 39, 61, 0.05);
+}
+
+.chart-card .card-header {
+    background: #fff;
+    font-weight: 600;
+    padding: 14px 18px;
+}
+
+/* Chart.js needs a parent with a fixed height when maintainAspectRatio = false */
+.chart-box {
+    height: 300px;
+    position: relative;
+}
+
+.chart-empty {
+    color: #667085;
+    margin: 0;
+    padding: 110px 0;
+    text-align: center;
+}
